@@ -1,0 +1,86 @@
+.header-wrapper, .subheader-wrapper {
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-weight: 500;
+
+    .navbar {
+        margin-bottom: 0;
+        min-height: 30px;
+        padding: 10px 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+.navbar-blue {
+    background-color: $dark-blue;
+    font-size: 12px;
+
+    a {
+        color: #fff;
+    }
+
+    li:not(:last-child) {
+        border-right: solid 1px #fff;
+    }
+}
+
+.subheader-wrapper {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 41px;
+    box-shadow: 0 1px 4px rgba(#000, 0.25);
+}
+
+.main-nav {
+    @include border-radius(0);
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+
+    > .container {
+        position: relative;
+    }
+
+    a {
+        color: $dark-blue;
+
+        &:before {
+            content: "";
+            display: block;
+            background: url("../img/star.png") no-repeat;
+            width: 12px;
+            height: 12px;
+            float: left;
+            margin: 4px 10px 0 0;
+
+        }
+
+        &:hover {
+            color: #666;
+        }
+    }
+}
+
+.logo {
+    box-shadow: 0 1px 4px rgba(#000, 0.25);
+    background: url('../img/logo.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 212px;
+    height: 132px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 200;
+}

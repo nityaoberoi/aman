@@ -1,0 +1,20 @@
+.marketing {
+
+    h2 {
+        text-transform: uppercase;
+        color: #00244c;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2em;
+
+        &:before {
+            content: "";
+            display: block;
+            background: url("../img/bigStar.png") no-repeat;
+            width: 26px;
+            height: 26px;
+            float: left;
+            margin: 4px 6px 0 0;
+        }
+    }
+}

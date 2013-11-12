@@ -1,0 +1,66 @@
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  left: 10%;
+  text-shadow: none;
+  text-align: start;
+
+  h3 {
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  h5 {
+    color: $dark-red;
+    font-style: italic;
+  }
+
+  p {
+    color: $light-gray;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: transparent;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-indicators {
+  li {
+
+    background-color: #8c99a3;
+    border: none;
+
+    &.active {
+      background-color: #12264b;
+    }
+
+  }
+}
+
+@media (min-width: 1200px) {
+
+    .carousel-caption {
+        width: 440px;
+        top: 30%;
+    }
+
+    .carousel-indicators {
+
+    }
+}
