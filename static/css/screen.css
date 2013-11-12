@@ -7823,16 +7823,12 @@ footer {
   height: 225px;
 }
 /* line 8, ../scss/components/_footer.scss */
-footer > div {
-  float: left;
-}
-/* line 12, ../scss/components/_footer.scss */
 footer .copyright {
   padding: 0 2px 10px;
   border-bottom: 1px solid #fff;
   text-align: right;
 }
-/* line 18, ../scss/components/_footer.scss */
+/* line 14, ../scss/components/_footer.scss */
 footer .map {
   margin: 0 auto;
   margin-top: 20px;
