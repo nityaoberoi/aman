@@ -1,3 +1,10 @@
 $dark-blue: #21365c;
 $dark-red: #be151b;
 $light-gray: #748b97;
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro'), url('../fonts/MyriadPro-lt.otf') format('opentype');
+}
