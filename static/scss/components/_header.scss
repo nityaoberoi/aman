@@ -25,6 +25,11 @@
 
     a {
         color: #fff;
+
+        &:hover, &:focus {
+            background-color: transparent !important;
+            color: $light-gray;
+        }
     }
 
     li:not(:last-child) {

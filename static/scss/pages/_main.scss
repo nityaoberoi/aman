@@ -6,6 +6,19 @@ body {
     background-color: rgb(234, 237, 241);
 }
 
+a {
+    text-decoration: none;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .btn-danger {
     background-color: $dark-red;
 }
@@ -23,6 +36,10 @@ body {
     height: auto !important;
     height: 100%;
     margin: 0 auto -221px;
+
+    .main-container {
+        margin-bottom: 80px;
+    }
 
     .push {
         height: 221px;
