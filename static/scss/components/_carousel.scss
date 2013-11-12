@@ -1,8 +1,29 @@
-/* Carousel base class */
 .carousel {
   margin-bottom: 60px;
+
+  .item {
+    height: 500px;
+    background-color: transparent;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+  }
+
+  .next {
+    left:0;
+    opacity:1;
+    z-index:1;
+  }
+
+  .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+  }
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
   z-index: 10;
   left: 10%;
@@ -31,10 +52,7 @@
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: transparent;
-}
+.carousel
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -62,6 +80,7 @@
     }
 
     .carousel-indicators {
-
+      bottom: 20%;
+      left: 13%;
     }
 }

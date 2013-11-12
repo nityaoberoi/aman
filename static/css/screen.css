@@ -7728,33 +7728,53 @@ td.visible-print {
   z-index: 200;
 }
 
-/* Carousel base class */
-/* line 2, ../scss/components/_carousel.scss */
+/* line 1, ../scss/components/_carousel.scss */
 .carousel {
   margin-bottom: 60px;
 }
+/* line 4, ../scss/components/_carousel.scss */
+.carousel .item {
+  height: 500px;
+  background-color: transparent;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+/* line 14, ../scss/components/_carousel.scss */
+.carousel .next {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+/* line 20, ../scss/components/_carousel.scss */
+.carousel .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
 
-/* Since positioning the image, we need to help out the caption */
-/* line 6, ../scss/components/_carousel.scss */
+/* line 27, ../scss/components/_carousel.scss */
 .carousel-caption {
   z-index: 10;
   left: 10%;
   text-shadow: none;
   text-align: start;
 }
-/* line 12, ../scss/components/_carousel.scss */
+/* line 33, ../scss/components/_carousel.scss */
 .carousel-caption h3 {
   color: #21365c;
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 18, ../scss/components/_carousel.scss */
+/* line 39, ../scss/components/_carousel.scss */
 .carousel-caption h5 {
   color: #be151b;
   font-style: italic;
   font-family: MyriadPro, Tahoma, sans-serif;
 }
-/* line 24, ../scss/components/_carousel.scss */
+/* line 45, ../scss/components/_carousel.scss */
 .carousel-caption p {
   color: #748b97;
   font-style: italic;
@@ -7763,34 +7783,35 @@ td.visible-print {
 }
 
 /* Declare heights because of positioning of img element */
-/* line 34, ../scss/components/_carousel.scss */
-.carousel .item {
-  height: 500px;
-  background-color: transparent;
-}
-
-/* line 38, ../scss/components/_carousel.scss */
+/* line 56, ../scss/components/_carousel.scss */
+.carousel
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 45, ../scss/components/_carousel.scss */
+/* line 63, ../scss/components/_carousel.scss */
 .carousel-indicators li {
   background-color: #8c99a3;
   border: none;
 }
-/* line 50, ../scss/components/_carousel.scss */
+/* line 68, ../scss/components/_carousel.scss */
 .carousel-indicators li.active {
   background-color: #12264b;
 }
 
 @media (min-width: 1200px) {
-  /* line 59, ../scss/components/_carousel.scss */
+  /* line 77, ../scss/components/_carousel.scss */
   .carousel-caption {
     width: 440px;
     top: 30%;
+  }
+
+  /* line 82, ../scss/components/_carousel.scss */
+  .carousel-indicators {
+    bottom: 20%;
+    left: 13%;
   }
 }
 /* line 1, ../scss/components/_footer.scss */
@@ -7798,23 +7819,20 @@ footer {
   background-color: #8c99a3;
   color: #fff;
   padding: 20px 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   font-size: 11px;
+  height: 225px;
 }
-/* line 11, ../scss/components/_footer.scss */
+/* line 8, ../scss/components/_footer.scss */
 footer > div {
   float: left;
 }
-/* line 15, ../scss/components/_footer.scss */
+/* line 12, ../scss/components/_footer.scss */
 footer .copyright {
   padding: 0 2px 10px;
   border-bottom: 1px solid #fff;
   text-align: right;
 }
-/* line 21, ../scss/components/_footer.scss */
+/* line 18, ../scss/components/_footer.scss */
 footer .map {
   margin: 0 auto;
   margin-top: 20px;
@@ -7824,16 +7842,21 @@ footer .map {
 }
 
 /* line 1, ../scss/pages/_main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../scss/pages/_main.scss */
 body {
   background-color: #eaedf1;
 }
 
-/* line 5, ../scss/pages/_main.scss */
+/* line 9, ../scss/pages/_main.scss */
 .btn-danger {
   background-color: #be151b;
 }
 
-/* line 9, ../scss/pages/_main.scss */
+/* line 13, ../scss/pages/_main.scss */
 .white-star {
   background: url("../img/whiteStar.png") no-repeat;
   width: 12px;
@@ -7842,8 +7865,20 @@ body {
   display: inline-block;
 }
 
+/* line 21, ../scss/pages/_main.scss */
+.body-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -221px;
+}
+/* line 27, ../scss/pages/_main.scss */
+.body-wrapper .push {
+  height: 221px;
+}
+
 @media (min-width: 1200px) {
-  /* line 19, ../scss/pages/_main.scss */
+  /* line 34, ../scss/pages/_main.scss */
   .container {
     width: 1370px;
   }
