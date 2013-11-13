@@ -1,0 +1,10 @@
+// its always good to have a spacing between each sprite
+// so the user wont see part of the sibling images
+// when he zooms
+$social-spacing: 5px;
+
+@import "icons/social/*.png";
+
+// http://compass-style.org/help/tutorials/spriting/
+// this generates a sprite containing the icon images, with theyre dimensions
+@include all-social-sprites(true);

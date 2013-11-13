@@ -7635,6 +7635,20 @@ td.visible-print {
   src: local("Myriad Pro"), url("../fonts/MyriadPro-lt.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'MyriadBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("MyriadPro-BoldSemiExt"), url("../fonts/MyriadPro-BoldSemiExt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MyriadLightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("MyriadPro-LightSemiExtIt"), url("../fonts/MyriadPro-LightSemiExtIt.otf") format("opentype");
+}
+
 /* line 1, ../scss/components/_header.scss */
 .header-wrapper, .subheader-wrapper {
   text-transform: uppercase;
@@ -7663,32 +7677,32 @@ td.visible-print {
 }
 
 @media (min-width: 768px) {
-  /* line 28, ../scss/components/_header.scss */
+  /* line 29, ../scss/components/_header.scss */
   .navbar-nav > li > a {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-/* line 35, ../scss/components/_header.scss */
+/* line 36, ../scss/components/_header.scss */
 .navbar-blue {
   background-color: #21365c;
   font-size: 12px;
 }
-/* line 39, ../scss/components/_header.scss */
+/* line 40, ../scss/components/_header.scss */
 .navbar-blue a {
   color: #fff;
 }
-/* line 42, ../scss/components/_header.scss */
+/* line 43, ../scss/components/_header.scss */
 .navbar-blue a:hover, .navbar-blue a:focus {
   background-color: transparent !important;
   color: #748b97;
 }
-/* line 48, ../scss/components/_header.scss */
+/* line 49, ../scss/components/_header.scss */
 .navbar-blue li:not(:last-child) {
   border-right: solid 1px #fff;
 }
 
-/* line 53, ../scss/components/_header.scss */
+/* line 54, ../scss/components/_header.scss */
 .subnavbar {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -7698,17 +7712,20 @@ td.visible-print {
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
 }
-/* line 58, ../scss/components/_header.scss */
+/* line 59, ../scss/components/_header.scss */
 .subnavbar > .container {
   position: relative;
 }
-/* line 62, ../scss/components/_header.scss */
-.subnavbar a {
-  color: #21365c;
+/* line 63, ../scss/components/_header.scss */
+.subnavbar li > a {
   padding-left: 25px;
   padding-right: 25px;
 }
-/* line 67, ../scss/components/_header.scss */
+/* line 68, ../scss/components/_header.scss */
+.subnavbar a {
+  color: #21365c;
+}
+/* line 72, ../scss/components/_header.scss */
 .subnavbar a:before {
   content: "";
   display: block;
@@ -7718,12 +7735,12 @@ td.visible-print {
   float: left;
   margin: 4px 10px 0 0;
 }
-/* line 78, ../scss/components/_header.scss */
+/* line 83, ../scss/components/_header.scss */
 .subnavbar a:hover {
   color: #666;
 }
 
-/* line 84, ../scss/components/_header.scss */
+/* line 89, ../scss/components/_header.scss */
 .logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   background: url("../img/logo.png") no-repeat;
@@ -7737,6 +7754,17 @@ td.visible-print {
   top: -10px;
   left: 150px;
   z-index: 20;
+}
+
+/* line 105, ../scss/components/_header.scss */
+header .navbar-form {
+  margin: 0;
+}
+/* line 109, ../scss/components/_header.scss */
+header .form-control {
+  height: 22px;
+  line-height: 1;
+  font-size: 11px;
 }
 
 /* line 1, ../scss/components/_carousel.scss */
@@ -7767,34 +7795,40 @@ td.visible-print {
 }
 
 /* line 27, ../scss/components/_carousel.scss */
+.carousel-inner {
+  overflow: visible;
+}
+
+/* line 31, ../scss/components/_carousel.scss */
 .carousel-caption {
   z-index: 10;
   left: 10%;
   text-shadow: none;
   text-align: start;
 }
-/* line 33, ../scss/components/_carousel.scss */
+/* line 37, ../scss/components/_carousel.scss */
 .carousel-caption h3 {
   color: #21365c;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "MyriadBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 39, ../scss/components/_carousel.scss */
-.carousel-caption h5 {
+/* line 44, ../scss/components/_carousel.scss */
+.carousel-caption h4 {
   color: #be151b;
   font-style: italic;
-  font-family: MyriadPro, Tahoma, sans-serif;
+  font-family: "MyriadLightItalic", Tahoma, sans-serif;
 }
-/* line 45, ../scss/components/_carousel.scss */
+/* line 50, ../scss/components/_carousel.scss */
 .carousel-caption p {
   color: #748b97;
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 /* Declare heights because of positioning of img element */
-/* line 56, ../scss/components/_carousel.scss */
+/* line 61, ../scss/components/_carousel.scss */
 .carousel
 .carousel-inner > .item > img {
   position: absolute;
@@ -7802,24 +7836,24 @@ td.visible-print {
   left: 0;
 }
 
-/* line 63, ../scss/components/_carousel.scss */
+/* line 68, ../scss/components/_carousel.scss */
 .carousel-indicators li {
   background-color: #8c99a3;
   border: none;
 }
-/* line 68, ../scss/components/_carousel.scss */
+/* line 73, ../scss/components/_carousel.scss */
 .carousel-indicators li.active {
   background-color: #12264b;
 }
 
 @media (min-width: 1200px) {
-  /* line 77, ../scss/components/_carousel.scss */
+  /* line 82, ../scss/components/_carousel.scss */
   .carousel-caption {
     width: 440px;
     top: 30%;
   }
 
-  /* line 82, ../scss/components/_carousel.scss */
+  /* line 87, ../scss/components/_carousel.scss */
   .carousel-indicators {
     bottom: 20%;
     left: 13%;
@@ -7829,57 +7863,87 @@ td.visible-print {
 footer {
   background-color: #8c99a3;
   color: #fff;
-  padding: 20px 50px;
+  padding: 40px 50px 20px;
   font-size: 11px;
   height: 225px;
 }
-/* line 8, ../scss/components/_footer.scss */
-footer .links {
-  margin-top: 25px;
+/* line 9, ../scss/components/_footer.scss */
+footer .footer-wrapper {
   border-top: 1px solid #fff;
   padding-top: 10px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
-/* line 14, ../scss/components/_footer.scss */
+/* line 16, ../scss/components/_footer.scss */
+footer .links {
+  padding-top: 10px;
+}
+/* line 20, ../scss/components/_footer.scss */
+footer .links ul {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+/* line 25, ../scss/components/_footer.scss */
 footer .links li {
   display: inline-block;
+  margin-right: 15px;
 }
-/* line 17, ../scss/components/_footer.scss */
-footer .links li:not(:last-child) {
-  margin-right: 5px;
-}
-/* line 22, ../scss/components/_footer.scss */
+/* line 30, ../scss/components/_footer.scss */
 footer .links a {
   color: #eee;
+}
+/* line 33, ../scss/components/_footer.scss */
+footer .links a:hover {
+  color: #00244c;
+}
+/* line 39, ../scss/components/_footer.scss */
+footer .links .main-links a {
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 27, ../scss/components/_footer.scss */
-footer .links a:before {
+/* line 43, ../scss/components/_footer.scss */
+footer .links .main-links a:before {
   content: "";
   display: block;
   background: url("../img/whiteStar.png") no-repeat;
   width: 12px;
   height: 12px;
   float: left;
-  margin: 1px 5px 0;
+  margin: 1px 7px 0 0;
 }
-/* line 38, ../scss/components/_footer.scss */
-footer .links a:hover {
-  color: #00244c;
+/* line 58, ../scss/components/_footer.scss */
+footer .links .sub-links li:not(:last-child) {
+  border-right: 1px solid #eee;
+  padding-right: 15px;
 }
-/* line 44, ../scss/components/_footer.scss */
+/* line 65, ../scss/components/_footer.scss */
 footer .copyright {
   padding: 0 2px 10px;
-  border-bottom: 1px solid #fff;
-  text-align: right;
 }
-/* line 50, ../scss/components/_footer.scss */
+/* line 69, ../scss/components/_footer.scss */
 footer .map {
   margin: 0 auto;
   margin-top: 20px;
-  background: url("../img/map.png") no-repeat 100% 0;
+  background: url("../img/map.png") no-repeat 50% 50%;
   width: 370px;
   height: 135px;
+}
+/* line 77, ../scss/components/_footer.scss */
+footer .where-we-are {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+/* line 85, ../scss/components/_footer.scss */
+footer .social-icons li {
+  margin-right: 5px;
+}
+/* line 89, ../scss/components/_footer.scss */
+footer .social-icons a {
+  -webkit-transition: 0;
+  transition: 0;
+  text-indent: -9999px;
+  display: block;
 }
 
 /* line 1, ../scss/pages/_main.scss */
@@ -7967,4 +8031,31 @@ a:hover {
 /* line 23, ../scss/pages/_landing_page.scss */
 .marketing p {
   margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* line 58, icons/social/*.png */
+.social-sprite, .social-facebook, footer .social-icons a.facebook, .social-linkedin, footer .social-icons a.linkedin, .social-twitter, footer .social-icons a.twitter {
+  background: url('../img/icons/social-scb197ee980.png') no-repeat;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook, footer .social-icons a.facebook {
+  background-position: 0 -74px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-linkedin, footer .social-icons a.linkedin {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter, footer .social-icons a.twitter {
+  background-position: 0 -37px;
+  height: 32px;
+  width: 32px;
 }

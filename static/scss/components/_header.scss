@@ -25,6 +25,7 @@
 }
 
 @media (min-width: 768px) {
+
     .navbar-nav > li > a {
         padding-top: 0;
         padding-bottom: 0;
@@ -59,10 +60,14 @@
         position: relative;
     }
 
-    a {
-        color: $dark-blue;
+    li > a {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    a {
+        color: $dark-blue;
+
 
         &:before {
             content: "";
@@ -94,4 +99,16 @@
     top: -10px;
     left: 150px;
     z-index: $z-index-logo;
+}
+
+header {
+    .navbar-form {
+        margin: 0;
+    }
+
+    .form-control {
+        height: 22px;
+        line-height: 1;
+        font-size: 11px;
+    }
 }

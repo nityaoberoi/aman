@@ -24,6 +24,10 @@
   }
 }
 
+.carousel-inner {
+  overflow: visible;
+}
+
 .carousel-caption {
   z-index: 10;
   left: 10%;
@@ -34,18 +38,19 @@
     color: $dark-blue;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif
   }
 
-  h5 {
+  h4 {
     color: $dark-red;
     font-style: italic;
-    font-family: MyriadPro, Tahoma, sans-serif
+    font-family: 'MyriadLightItalic', Tahoma, sans-serif
   }
 
   p {
     color: $light-gray;
     font-style: italic;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
   }
 

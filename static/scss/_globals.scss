@@ -2,6 +2,9 @@ $dark-blue: #21365c;
 $dark-red: #be151b;
 $light-gray: #748b97;
 
+$z-index-subnav: 10;
+$z-index-logo: 20;
+
 @font-face {
   font-family: 'Myriad Pro';
   font-style: normal;
@@ -9,6 +12,16 @@ $light-gray: #748b97;
   src: local('Myriad Pro'), url('../fonts/MyriadPro-lt.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'MyriadBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MyriadPro-BoldSemiExt'), url('../fonts/MyriadPro-BoldSemiExt.otf') format('opentype');
+}
 
-$z-index-subnav: 10;
-$z-index-logo: 20;
+@font-face {
+  font-family: 'MyriadLightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MyriadPro-LightSemiExtIt'), url('../fonts/MyriadPro-LightSemiExtIt.otf') format('opentype');
+}
