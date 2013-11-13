@@ -1,5 +1,6 @@
 .carousel {
-  margin-bottom: 60px;
+  width: 1370px;
+  margin: 0 auto 60px;
 
   .item {
     height: 500px;
@@ -30,7 +31,7 @@
 
 .carousel-caption {
   z-index: 10;
-  left: 10%;
+  left: 9%;
   text-shadow: none;
   text-align: start;
 
@@ -38,13 +39,12 @@
     color: $dark-blue;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   h4 {
     color: $dark-red;
-    font-style: italic;
-    font-family: 'MyriadLightItalic', Tahoma, sans-serif
+    font-family: 'MyriadLightItalic', Tahoma, sans-serif;
   }
 
   p {
@@ -86,6 +86,6 @@
 
     .carousel-indicators {
       bottom: 20%;
-      left: 13%;
+      left: 11.5%;
     }
 }

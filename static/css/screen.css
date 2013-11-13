@@ -7661,12 +7661,8 @@ td.visible-print {
   min-height: 30px;
   padding: 10px 0;
 }
-/* line 11, ../scss/components/_header.scss */
-.header-wrapper .navbar .container, .subheader-wrapper .navbar .container {
-  padding: 0 130px;
-}
 
-/* line 18, ../scss/components/_header.scss */
+/* line 14, ../scss/components/_header.scss */
 .subheader-wrapper {
   z-index: 10;
   position: absolute;
@@ -7677,32 +7673,32 @@ td.visible-print {
 }
 
 @media (min-width: 768px) {
-  /* line 29, ../scss/components/_header.scss */
+  /* line 25, ../scss/components/_header.scss */
   .navbar-nav > li > a {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-/* line 36, ../scss/components/_header.scss */
+/* line 32, ../scss/components/_header.scss */
 .navbar-blue {
   background-color: #21365c;
   font-size: 12px;
 }
-/* line 40, ../scss/components/_header.scss */
+/* line 36, ../scss/components/_header.scss */
 .navbar-blue a {
   color: #fff;
 }
-/* line 43, ../scss/components/_header.scss */
+/* line 39, ../scss/components/_header.scss */
 .navbar-blue a:hover, .navbar-blue a:focus {
   background-color: transparent !important;
   color: #748b97;
 }
-/* line 49, ../scss/components/_header.scss */
+/* line 45, ../scss/components/_header.scss */
 .navbar-blue li:not(:last-child) {
   border-right: solid 1px #fff;
 }
 
-/* line 54, ../scss/components/_header.scss */
+/* line 50, ../scss/components/_header.scss */
 .subnavbar {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -7712,20 +7708,20 @@ td.visible-print {
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
 }
-/* line 59, ../scss/components/_header.scss */
+/* line 55, ../scss/components/_header.scss */
 .subnavbar > .container {
   position: relative;
 }
-/* line 63, ../scss/components/_header.scss */
+/* line 59, ../scss/components/_header.scss */
 .subnavbar li > a {
   padding-left: 25px;
   padding-right: 25px;
 }
-/* line 68, ../scss/components/_header.scss */
+/* line 64, ../scss/components/_header.scss */
 .subnavbar a {
   color: #21365c;
 }
-/* line 72, ../scss/components/_header.scss */
+/* line 68, ../scss/components/_header.scss */
 .subnavbar a:before {
   content: "";
   display: block;
@@ -7735,12 +7731,12 @@ td.visible-print {
   float: left;
   margin: 4px 10px 0 0;
 }
-/* line 83, ../scss/components/_header.scss */
+/* line 79, ../scss/components/_header.scss */
 .subnavbar a:hover {
   color: #666;
 }
 
-/* line 89, ../scss/components/_header.scss */
+/* line 85, ../scss/components/_header.scss */
 .logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   background: url("../img/logo.png") no-repeat;
@@ -7752,15 +7748,15 @@ td.visible-print {
   height: 132px;
   position: absolute;
   top: -10px;
-  left: 150px;
+  left: 20px;
   z-index: 20;
 }
 
-/* line 105, ../scss/components/_header.scss */
+/* line 101, ../scss/components/_header.scss */
 header .navbar-form {
   margin: 0;
 }
-/* line 109, ../scss/components/_header.scss */
+/* line 105, ../scss/components/_header.scss */
 header .form-control {
   height: 22px;
   line-height: 1;
@@ -7769,9 +7765,10 @@ header .form-control {
 
 /* line 1, ../scss/components/_carousel.scss */
 .carousel {
-  margin-bottom: 60px;
+  width: 1370px;
+  margin: 0 auto 60px;
 }
-/* line 4, ../scss/components/_carousel.scss */
+/* line 5, ../scss/components/_carousel.scss */
 .carousel .item {
   height: 500px;
   background-color: transparent;
@@ -7781,43 +7778,42 @@ header .form-control {
   -o-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
 }
-/* line 14, ../scss/components/_carousel.scss */
+/* line 15, ../scss/components/_carousel.scss */
 .carousel .next {
   left: 0;
   opacity: 1;
   z-index: 1;
 }
-/* line 20, ../scss/components/_carousel.scss */
+/* line 21, ../scss/components/_carousel.scss */
 .carousel .active.left {
   left: 0;
   opacity: 0;
   z-index: 2;
 }
 
-/* line 27, ../scss/components/_carousel.scss */
+/* line 28, ../scss/components/_carousel.scss */
 .carousel-inner {
   overflow: visible;
 }
 
-/* line 31, ../scss/components/_carousel.scss */
+/* line 32, ../scss/components/_carousel.scss */
 .carousel-caption {
   z-index: 10;
-  left: 10%;
+  left: 9%;
   text-shadow: none;
   text-align: start;
 }
-/* line 37, ../scss/components/_carousel.scss */
+/* line 38, ../scss/components/_carousel.scss */
 .carousel-caption h3 {
   color: #21365c;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: "MyriadBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-/* line 44, ../scss/components/_carousel.scss */
+/* line 45, ../scss/components/_carousel.scss */
 .carousel-caption h4 {
   color: #be151b;
-  font-style: italic;
-  font-family: "MyriadLightItalic", Tahoma, sans-serif;
+  font-family: 'MyriadLightItalic', Tahoma, sans-serif;
 }
 /* line 50, ../scss/components/_carousel.scss */
 .carousel-caption p {
@@ -7856,7 +7852,7 @@ header .form-control {
   /* line 87, ../scss/components/_carousel.scss */
   .carousel-indicators {
     bottom: 20%;
-    left: 13%;
+    left: 11.5%;
   }
 }
 /* line 1, ../scss/components/_footer.scss */
@@ -7871,8 +7867,8 @@ footer {
 footer .footer-wrapper {
   border-top: 1px solid #fff;
   padding-top: 10px;
-  margin-left: 160px;
-  margin-right: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* line 16, ../scss/components/_footer.scss */
 footer .links {
@@ -8000,17 +7996,11 @@ a:hover {
   height: 221px;
 }
 
-@media (min-width: 1200px) {
-  /* line 51, ../scss/pages/_main.scss */
-  .container {
-    width: 1370px;
-  }
-}
-/* line 1, ../scss/pages/_landing_page.scss */
+/* line 49, ../scss/pages/_main.scss */
 .marketing {
-  padding: 0 130px;
+  padding: 0 20px;
 }
-/* line 5, ../scss/pages/_landing_page.scss */
+/* line 53, ../scss/pages/_main.scss */
 .marketing h2 {
   text-transform: uppercase;
   color: #00244c;
@@ -8018,7 +8008,7 @@ a:hover {
   font-weight: 600;
   line-height: 2em;
 }
-/* line 12, ../scss/pages/_landing_page.scss */
+/* line 60, ../scss/pages/_main.scss */
 .marketing h2:before {
   content: "";
   display: block;
@@ -8028,9 +8018,33 @@ a:hover {
   float: left;
   margin: 4px 6px 0 0;
 }
-/* line 23, ../scss/pages/_landing_page.scss */
+/* line 71, ../scss/pages/_main.scss */
 .marketing p {
   margin-bottom: 20px;
+  font-size: 13px;
+  color: #748b97;
+}
+
+/* line 3, ../scss/pages/_detail_page.scss */
+.detail-page .main-container .container {
+  margin-top: 160px;
+}
+/* line 8, ../scss/pages/_detail_page.scss */
+.detail-page .content h2 {
+  color: #21365c;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* line 15, ../scss/pages/_detail_page.scss */
+.detail-page .content h4 {
+  color: #be151b;
+  font-family: 'MyriadLightItalic', Tahoma, sans-serif;
+}
+/* line 20, ../scss/pages/_detail_page.scss */
+.detail-page .content p {
+  color: #748b97;
+  text-align: justify;
   font-size: 13px;
 }
 

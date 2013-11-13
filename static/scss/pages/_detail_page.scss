@@ -1,0 +1,28 @@
+.detail-page {
+
+    .main-container .container {
+        margin-top: 160px;
+    }
+
+    .content {
+        h2 {
+            color: $dark-blue;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        h4 {
+            color: $dark-red;
+            font-family: 'MyriadLightItalic', Tahoma, sans-serif;
+        }
+
+        p {
+            color: $light-gray;
+            text-align: justify;
+            font-size: 13px;
+        }
+    }
+
+
+}

@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <!-- <link href="carousel.css" rel="stylesheet"> -->
 </head>
-<body class="landing-page">
+<body class="landing-page {% block body_classes %}{% endblock %}">
     <div class="body-wrapper">
         <header class="header-wrapper">
             <div class="navbar navbar-blue navbar-static-top" role="navigation">
@@ -72,12 +72,12 @@
               </div>
             </div>
         </header>
-        <section class="main-container container">
+        <section class="main-container">
 
             {% block main_content %}
             {% endblock %}
 
-            <div class="marketing">
+            <div class="marketing container">
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -101,7 +101,7 @@
         <div class="push"></div>
     </div>
     <footer>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper container">
             <div class="links pull-left">
                 <div class="main-links">
                     <ul>
@@ -129,7 +129,7 @@
                     &copy; 2013 Aman Investment
                 </div>
             </div>
-            <div class="map-wrapper pull-right">
+            <div class="map-wrapper pull-right visible-lg">
                 <div class="where-we-are">Our precensce</div>
                 <div class="map"></div>
             </div>

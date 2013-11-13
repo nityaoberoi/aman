@@ -1,15 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'detail_page.html' %}
 
-{% block main_content %}
-<div class="">
-    <h2>About us</h2>
-    <h4>We secure your future</h4>
-    <p>
-        Aman Investment helps individuals in the Middle East make wise investments and secure permanent residency in countries where they will find a safe environment, good healthcare, excellent education, and employment for themselves and their families.
-
-        Aman Investment was established in Iraq, with local and international partners from the Middle East, America, and Asia. Its shareholders and personnel share extensive experience working in the Middle East, and uphold a strong commitment to serving every client with professionalism and ethics.
-
-        To that end, Aman Investment places great importance on developing partnerships with international organizations that have proven records of accomplishment and offer clients safe investment options.
-    </p>
-</div>
+{% block body_classes %}detail-page{% endblock %}
+{% block header %}About us{% endblock %}
+{% block subheader %}We secure your future{% endblock %}
+{% block content %}
+<p>
+Aman Investment helps individuals in the Middle East make wise investments and secure permanent residency in countries where they will find a safe environment, good healthcare, excellent education, and employment for themselves and their families.
+</p>
+<p>
+Aman Investment was established in Iraq, with local and international partners from the Middle East, America, and Asia. Its shareholders and personnel share extensive experience working in the Middle East, and uphold a strong commitment to serving every client with professionalism and ethics.
+</p>
+<p>
+To that end, Aman Investment places great importance on developing partnerships with international organizations that have proven records of accomplishment and offer clients safe investment options.
+</p>
 {% endblock %}
