@@ -59,11 +59,7 @@
     li > a {
         padding-left: 25px;
         padding-right: 25px;
-    }
-
-    a {
         color: $dark-blue;
-
 
         &:before {
             content: "";
@@ -78,6 +74,7 @@
 
         &:hover {
             color: #666;
+            background-color: #aaa;
         }
     }
 }

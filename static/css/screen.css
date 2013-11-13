@@ -7716,13 +7716,10 @@ td.visible-print {
 .subnavbar li > a {
   padding-left: 25px;
   padding-right: 25px;
-}
-/* line 64, ../scss/components/_header.scss */
-.subnavbar a {
   color: #21365c;
 }
-/* line 68, ../scss/components/_header.scss */
-.subnavbar a:before {
+/* line 64, ../scss/components/_header.scss */
+.subnavbar li > a:before {
   content: "";
   display: block;
   background: url("../img/star.png") no-repeat;
@@ -7731,12 +7728,13 @@ td.visible-print {
   float: left;
   margin: 4px 10px 0 0;
 }
-/* line 79, ../scss/components/_header.scss */
-.subnavbar a:hover {
+/* line 75, ../scss/components/_header.scss */
+.subnavbar li > a:hover {
   color: #666;
+  background-color: #aaa;
 }
 
-/* line 85, ../scss/components/_header.scss */
+/* line 82, ../scss/components/_header.scss */
 .logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   background: url("../img/logo.png") no-repeat;
@@ -7752,11 +7750,11 @@ td.visible-print {
   z-index: 20;
 }
 
-/* line 101, ../scss/components/_header.scss */
+/* line 98, ../scss/components/_header.scss */
 header .navbar-form {
   margin: 0;
 }
-/* line 105, ../scss/components/_header.scss */
+/* line 102, ../scss/components/_header.scss */
 header .form-control {
   height: 22px;
   line-height: 1;
@@ -8026,8 +8024,9 @@ a:hover {
 }
 
 /* line 3, ../scss/pages/_detail_page.scss */
-.detail-page .main-container .container {
+.detail-page .content {
   margin-top: 160px;
+  margin-bottom: 20px;
 }
 /* line 8, ../scss/pages/_detail_page.scss */
 .detail-page .content h2 {
@@ -8046,6 +8045,11 @@ a:hover {
   color: #748b97;
   text-align: justify;
   font-size: 13px;
+}
+/* line 26, ../scss/pages/_detail_page.scss */
+.detail-page .content .image {
+  margin: 40px 0 20px;
+  text-align: center;
 }
 
 /* line 58, icons/social/*.png */
