@@ -11,6 +11,37 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route('/about/')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/programs/usa/')
+def usa():
+    return render_template('programs/usa.html')
+
+
+@app.route('/programs/canada/')
+def canada():
+    return render_template('programs/canada.html')
+
+@app.route('/programs/eu/')
+def eu():
+    return render_template('programs/eu.html')
+
+@app.route('/partnerships/')
+def partnerships():
+    return render_template('partnerships.html')
+
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/faqs/')
+def faqs():
+    return render_template('faqs.html')
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
