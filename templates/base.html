@@ -56,8 +56,8 @@
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="/about/">About</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown">Programs</a>
+                    <li class="programs-dropdown">
+                      <a class="dropdown-toggle" data-toggle="programs-dropdown">Programs</a>
                       <ul class="dropdown-menu">
                         <li><a href="/programs/usa/">USA</a></li>
                         <li><a href="/programs/canada/">Canada</a></li>
@@ -144,7 +144,9 @@
     jQuery(function($) {
         $('.carousel').carousel({
           interval: 3000
-        })
+        });
+
+        $('.dropdown-toggle').dropdown();
     });
 </script>
 </html>

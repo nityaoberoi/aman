@@ -8051,6 +8051,16 @@ a:hover {
   margin: 40px 0 20px;
   text-align: center;
 }
+/* line 34, ../scss/pages/_detail_page.scss */
+.detail-page .partner .logo {
+  width: 150px;
+  margin-right: 10px;
+  float: left;
+}
+/* line 40, ../scss/pages/_detail_page.scss */
+.detail-page .partner .details {
+  float: left;
+}
 
 /* line 58, icons/social/*.png */
 .social-sprite, .social-facebook, footer .social-icons a.facebook, .social-linkedin, footer .social-icons a.linkedin, .social-twitter, footer .social-icons a.twitter {
