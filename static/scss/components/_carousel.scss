@@ -1,5 +1,4 @@
 .carousel {
-  width: 1370px;
   margin: 0 auto 60px;
 
   .item {
@@ -78,6 +77,10 @@
 }
 
 @media (min-width: 1200px) {
+
+    .carousel {
+      width: 1370px;
+    }
 
     .carousel-caption {
         width: 440px;
