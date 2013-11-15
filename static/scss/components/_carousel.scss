@@ -30,7 +30,7 @@
 
 .carousel-caption {
   z-index: 10;
-  left: 9%;
+  left: 16%; // 9% if 1170px container (default)
   text-shadow: none;
   text-align: start;
 
@@ -89,6 +89,6 @@
 
     .carousel-indicators {
       bottom: 20%;
-      left: 11.5%;
+      left: 18.75%; // 11.5%; if default container width
     }
 }

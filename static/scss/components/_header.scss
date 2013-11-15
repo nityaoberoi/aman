@@ -1,12 +1,23 @@
-.header-wrapper, .subheader-wrapper {
+header {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-weight: 500;
 
     .navbar {
         margin-bottom: 0;
         min-height: 30px;
         padding: 10px 0;
+    }
+
+    .navbar-form {
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .form-control {
+        height: 22px;
+        line-height: 1;
+        font-size: 11px;
     }
 
 }
@@ -19,15 +30,6 @@
     top: 41px;
     box-shadow: 0 1px 4px rgba(#000, 0.25);
 }
-
-@media (min-width: 768px) {
-
-    .navbar-nav > li > a {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 
 .navbar-blue {
     background-color: $dark-blue;
@@ -50,31 +52,40 @@
 .subnavbar {
     @include border-radius(0);
     background-color: rgba(255, 255, 255, 0.6);
-    font-size: 13px;
 
     > .container {
         position: relative;
     }
 
-    li > a {
-        padding-left: 25px;
-        padding-right: 25px;
-        color: $dark-blue;
+    li {
+        font-size: 13px;
 
-        &:before {
-            content: "";
-            display: block;
-            background: url("../img/star.png") no-repeat;
-            width: 12px;
-            height: 12px;
-            float: left;
-            margin: 4px 10px 0 0;
-
+        &:not(:last-child) {
+            padding-right: 40px;
         }
 
-        &:hover {
-            color: #666;
-            background-color: #aaa;
+        > a {
+            padding: 0;
+            color: $dark-blue;
+
+            &:not(.sublink):before {
+                content: "";
+                display: block;
+                background: url("../img/star.png") no-repeat;
+                width: 12px;
+                height: 12px;
+                float: left;
+                margin: 4px 10px 0 0;
+            }
+
+            &.sublink {
+                padding-left: 20px;
+            }
+
+            &:hover {
+                color: $light-gray;
+                background-color: transparent;
+            }
         }
     }
 }
@@ -94,14 +105,14 @@
     z-index: $z-index-logo;
 }
 
-header {
-    .navbar-form {
-        margin: 0;
+@media (min-width: 768px) {
+
+    .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    .form-control {
-        height: 22px;
-        line-height: 1;
-        font-size: 11px;
+    .container > .navbar-collapse {
+        margin-right: -15px;
     }
 }

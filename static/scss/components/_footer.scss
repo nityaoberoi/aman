@@ -4,7 +4,7 @@ footer {
     color: #fff;
     padding: 40px 50px 20px;
     font-size: 11px;
-    height: 225px;
+    min-height: 225px;
 
     .footer-wrapper {
         border-top: 1px solid #fff;
@@ -69,9 +69,10 @@ footer {
     .map {
         margin: 0 auto;
         margin-top: 20px;
-        background: url('../img/map.png') no-repeat 50% 50%;
-        width: 370px;
-        height: 135px;
+        background: url('../img/map.png') no-repeat 100% 0;
+        width: 370px;;
+        height: 200px;
+        background-size: cover;
     }
 
     .where-we-are {

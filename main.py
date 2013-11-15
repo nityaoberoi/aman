@@ -25,22 +25,30 @@ def usa():
 def canada():
     return render_template('programs/canada.html')
 
+
 @app.route('/programs/eu/')
 def eu():
     return render_template('programs/eu.html')
+
 
 @app.route('/partnerships/')
 def partnerships():
     return render_template('partnerships.html')
 
+
 @app.route('/contact/')
 def contact():
     return render_template('contact.html')
 
+
 @app.route('/faqs/')
 def faqs():
-    return render_template('faqs.html')
+    return render_template('faq.html')
 
+
+@app.route('/tos/')
+def terms():
+    return render_template('terms.html')
 
 
 if __name__ == "__main__":
