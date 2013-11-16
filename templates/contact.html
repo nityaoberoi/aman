@@ -1,0 +1,24 @@
+{% extends 'detail_page.html' %}
+
+{% block header %}Contact us{% endblock %}
+{% block subheader %}Your first step on the path to a secure future {% endblock %}
+{% block content %}
+    <div class="contact-desc">
+        <p>
+        Have you decided to invest in one of Aman's immigrant investor programs? Or do you have specific questions about any of them? Perhaps you only wish to give us feedback on our website? We would love to hear from you. Feel free to call us, email us, send us message through Facebook or LinkedIn, or simply fill the adjascent form, not forgetting to leave us your contact information.
+        </p>
+
+        <p><strong>T.</strong> +964 781 133 2244</p>
+        <p><strong>E.</strong> info@aman-investment.com</p>
+    </div>
+    <div class="contact-form">
+        <form method="POST" action="/contact/">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Message"></textarea>
+            <button class="btn btn-sm btn-danger">Send</button>
+        </form>
+    </div>
+{% endblock %}
+

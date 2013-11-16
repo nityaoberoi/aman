@@ -8049,6 +8049,12 @@ a:hover {
   color: #748b97;
 }
 
+/* line 83, ../scss/pages/_main.scss */
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* line 3, ../scss/pages/_detail_page.scss */
 .detail-page .content {
   margin-top: 160px;
@@ -8072,7 +8078,7 @@ a:hover {
   position: relative;
 }
 /* line 25, ../scss/pages/_detail_page.scss */
-.detail-page .content p {
+.detail-page .content p, .detail-page .content .faq-bullets {
   color: #748b97;
   text-align: justify;
   font-size: 13px;
@@ -8117,6 +8123,42 @@ a:hover {
   font-weight: 600;
   margin: 30px 0 10px;
   display: block;
+}
+/* line 74, ../scss/pages/_detail_page.scss */
+.detail-page .faq-bullets {
+  padding-left: 20px;
+}
+/* line 78, ../scss/pages/_detail_page.scss */
+.detail-page .contact-desc {
+  display: inline-block;
+  width: 46%;
+  vertical-align: top;
+  margin-right: 4%;
+}
+/* line 85, ../scss/pages/_detail_page.scss */
+.detail-page .contact-form {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+/* line 90, ../scss/pages/_detail_page.scss */
+.detail-page .contact-form input, .detail-page .contact-form textarea {
+  border-radius: 0px;
+  background-color: #fff;
+  color: #003541;
+  padding: 5px;
+  margin: 0px 0px 5px;
+  border: 0px solid #484c4f;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  width: 100%;
+}
+/* line 105, ../scss/pages/_detail_page.scss */
+.detail-page .contact-form textarea {
+  height: 130px;
 }
 
 /* line 58, icons/social/*.png */

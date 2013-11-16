@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 from flask import Flask, render_template
+from forms import ContactUsForm
 
 app = Flask(__name__)
 
@@ -36,7 +37,7 @@ def partnerships():
     return render_template('partnerships.html')
 
 
-@app.route('/contact/')
+@app.route('/contact/', methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html')
 
@@ -49,6 +50,10 @@ def faqs():
 @app.route('/tos/')
 def terms():
     return render_template('terms.html')
+
+
+def send_email(form):
+    print "Form is done!"
 
 
 if __name__ == "__main__":

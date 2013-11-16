@@ -79,3 +79,8 @@ a {
         color: $light-gray;
     }
 }
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
