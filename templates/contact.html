@@ -12,13 +12,50 @@
         <p><strong>E.</strong> info@aman-investment.com</p>
     </div>
     <div class="contact-form">
-        <form method="POST" action="/contact/">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message"></textarea>
+        {% if success %}
+            <div class="alert alert-success">Thank you for your message. We'll get back to you shortly.</div>
+        {% endif %}
+        <div class="alert alert-danger error-message"></div>
+        <form method="POST" action="/contact/" name="contact_form">
+            {{ form.name(placeholder="Name") }}
+            {{ form.email(placeholder="Email") }}
+            {{ form.subject(placeholder="Subject") }}
+            {{ form.message(placeholder="Message") }}
             <button class="btn btn-sm btn-danger">Send</button>
         </form>
     </div>
 {% endblock %}
+{% block extra_js %}
+    <script type="text/javascript" src="/static/js/validate.min.js"></script>
+    <script>
+    jQuery(function($){
+        var validator = new FormValidator('contact_form', [{
+            name: 'name',
+            rules: 'required|min_length[2]'
+        }, {
+            name: 'email',
+            rules: 'required|valid_email'
+        }, {
+            name: 'subject',
+            rules: 'min_length[2]'
+        }, {
+            name: 'message',
+            rules: 'required|min_length[10]'
+        }], function(errors, event) {
+            var errorBox = $('.error-message');
+            errorBox.empty();
+            errorBox.hide();
+            if (errors.length > 0) {
+                var errorString = '';
+                for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+                    errorString += errors[i].message + '<br />';
+                }
 
+                errorBox.append(errorString);
+                errorBox.show();
+            }
+        });
+    });
+
+    </script>
+{% endblock %}

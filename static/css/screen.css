@@ -7727,8 +7727,9 @@ header .form-control {
 .subnavbar li > a {
   padding: 0;
   color: #21365c;
+  font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-/* line 71, ../scss/components/_header.scss */
+/* line 72, ../scss/components/_header.scss */
 .subnavbar li > a:not(.sublink):before {
   content: "";
   display: block;
@@ -7736,19 +7737,19 @@ header .form-control {
   width: 12px;
   height: 12px;
   float: left;
-  margin: 4px 10px 0 0;
+  margin: 2px 10px 0 0;
 }
-/* line 81, ../scss/components/_header.scss */
+/* line 82, ../scss/components/_header.scss */
 .subnavbar li > a.sublink {
   padding-left: 20px;
 }
-/* line 85, ../scss/components/_header.scss */
+/* line 86, ../scss/components/_header.scss */
 .subnavbar li > a:hover {
   color: #748b97;
   background-color: transparent;
 }
 
-/* line 93, ../scss/components/_header.scss */
+/* line 94, ../scss/components/_header.scss */
 .logo {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   background: url("../img/logo.png") no-repeat;
@@ -7765,13 +7766,13 @@ header .form-control {
 }
 
 @media (min-width: 768px) {
-  /* line 110, ../scss/components/_header.scss */
+  /* line 111, ../scss/components/_header.scss */
   .navbar-nav > li > a {
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  /* line 115, ../scss/components/_header.scss */
+  /* line 116, ../scss/components/_header.scss */
   .container > .navbar-collapse {
     margin-right: -15px;
   }
@@ -7978,24 +7979,26 @@ a {
   -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
+  color: #21365c;
 }
-/* line 17, ../scss/pages/_main.scss */
+/* line 18, ../scss/pages/_main.scss */
 a:hover {
   text-decoration: none;
+  color: #be151b;
 }
 
-/* line 22, ../scss/pages/_main.scss */
+/* line 24, ../scss/pages/_main.scss */
 .container {
   width: 980px;
   padding-left: 20px;
 }
 
-/* line 27, ../scss/pages/_main.scss */
+/* line 29, ../scss/pages/_main.scss */
 .btn-danger {
   background-color: #be151b;
 }
 
-/* line 31, ../scss/pages/_main.scss */
+/* line 33, ../scss/pages/_main.scss */
 .white-star {
   background: url("../img/whiteStar.png") no-repeat;
   width: 12px;
@@ -8004,35 +8007,36 @@ a:hover {
   display: inline-block;
 }
 
-/* line 39, ../scss/pages/_main.scss */
+/* line 41, ../scss/pages/_main.scss */
 .body-wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -221px;
 }
-/* line 45, ../scss/pages/_main.scss */
+/* line 47, ../scss/pages/_main.scss */
 .body-wrapper .main-container {
   margin-bottom: 80px;
 }
-/* line 49, ../scss/pages/_main.scss */
+/* line 51, ../scss/pages/_main.scss */
 .body-wrapper .push {
   height: 221px;
 }
 
-/* line 54, ../scss/pages/_main.scss */
+/* line 56, ../scss/pages/_main.scss */
 .marketing {
   padding: 0 20px;
 }
-/* line 58, ../scss/pages/_main.scss */
+/* line 60, ../scss/pages/_main.scss */
 .marketing h2 {
+  font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #00244c;
   font-size: 16px;
   font-weight: 600;
   line-height: 2em;
 }
-/* line 65, ../scss/pages/_main.scss */
+/* line 68, ../scss/pages/_main.scss */
 .marketing h2:before {
   content: "";
   display: block;
@@ -8040,16 +8044,16 @@ a:hover {
   width: 26px;
   height: 26px;
   float: left;
-  margin: 4px 6px 0 0;
+  margin-right: 6px;
 }
-/* line 76, ../scss/pages/_main.scss */
+/* line 79, ../scss/pages/_main.scss */
 .marketing p {
   margin-bottom: 20px;
   font-size: 13px;
   color: #748b97;
 }
 
-/* line 83, ../scss/pages/_main.scss */
+/* line 86, ../scss/pages/_main.scss */
 .no-bullets {
   list-style-type: none;
   padding: 0;
@@ -8159,6 +8163,11 @@ a:hover {
 /* line 105, ../scss/pages/_detail_page.scss */
 .detail-page .contact-form textarea {
   height: 130px;
+}
+/* line 109, ../scss/pages/_detail_page.scss */
+.detail-page .contact-form .error-message {
+  display: none;
+  font-size: 13px;
 }
 
 /* line 58, icons/social/*.png */

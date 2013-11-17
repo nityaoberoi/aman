@@ -13,9 +13,11 @@ a {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
+    color: $dark-blue;
 
     &:hover {
         text-decoration: none;
+        color: $dark-red;
     }
 }
 
@@ -56,6 +58,7 @@ a {
     padding: 0 20px;
 
     h2 {
+        font-family: 'MyriadBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         color: #00244c;
         font-size: 16px;
@@ -69,7 +72,7 @@ a {
             width: 26px;
             height: 26px;
             float: left;
-            margin: 4px 6px 0 0;
+            margin-right: 6px;
         }
     }
 
