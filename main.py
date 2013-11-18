@@ -2,7 +2,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from flask import Flask, render_template, request
+import os
+
+from flask import (
+    Flask,
+    render_template,
+    request,
+    send_from_directory
+)
 from flask.ext.mail import Message, Mail
 from forms import ContactUsForm
 
@@ -11,6 +18,11 @@ mail = Mail()
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 mail.init_app(app)
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'img/favicon.png')
 
 
 @app.route('/')
