@@ -8049,7 +8049,7 @@ a:hover {
 /* line 79, ../scss/pages/_main.scss */
 .marketing p {
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 14px;
   color: #748b97;
 }
 
@@ -8085,7 +8085,7 @@ a:hover {
 .detail-page .content p, .detail-page .content .faq-bullets {
   color: #748b97;
   text-align: justify;
-  font-size: 13px;
+  font-size: 14px;
 }
 /* line 31, ../scss/pages/_detail_page.scss */
 .detail-page .content .image {
